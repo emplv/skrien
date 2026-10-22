@@ -1,0 +1,68 @@
+{
+  "format": 1,
+  "assets": [
+    {
+      "path": "vendor/three.module.js",
+      "source": "https://www.npmjs.com/package/three",
+      "version": "0.160.1",
+      "bytes": 1272972,
+      "sha256": "76dea8151bc9352aef3528b4262e249b2604f62543828328db978d060d61a495"
+    },
+    {
+      "path": "vendor/vision_bundle.mjs",
+      "source": "https://www.npmjs.com/package/@mediapipe/tasks-vision",
+      "version": "0.10.18",
+      "bytes": 139953,
+      "sha256": "92ba6016fd0fc8bbce237086dec6212f72a03b06d0a5ecfdc71ddc724ccdbabb"
+    },
+    {
+      "path": "models/pose_landmarker_lite.task",
+      "source": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_lite/float16/1/pose_landmarker_lite.task",
+      "version": "float16/1",
+      "bytes": 5777746,
+      "sha256": "59929e1d1ee95287735ddd833b19cf4ac46d29bc7afddbbf6753c459690d574a"
+    },
+    {
+      "path": "vendor/LICENSE.three.txt",
+      "source": "https://github.com/mrdoob/three.js/blob/r160/LICENSE",
+      "version": "0.160.1",
+      "bytes": 1081,
+      "sha256": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d"
+    },
+    {
+      "path": "vendor/LICENSE.mediapipe.txt",
+      "source": "https://raw.githubusercontent.com/google-ai-edge/mediapipe/v0.10.18/LICENSE",
+      "version": "0.10.18",
+      "bytes": 12331,
+      "sha256": "8707eef0533987efc5b155d64761eeb6e20793f50b9bd1a68dad1cf4719d0ed8"
+    },
+    {
+      "path": "vendor/wasm/vision_wasm_internal.js",
+      "source": "https://www.npmjs.com/package/@mediapipe/tasks-vision",
+      "version": "0.10.18",
+      "bytes": 203819,
+      "sha256": "2b120e1c7272905719f7893e5f09e033ead468b46b510e6b490d93e3d94ec69c"
+    },
+    {
+      "path": "vendor/wasm/vision_wasm_internal.wasm",
+      "source": "https://www.npmjs.com/package/@mediapipe/tasks-vision",
+      "version": "0.10.18",
+      "bytes": 9502124,
+      "sha256": "35d67ac01df034a04a38cb0533d6438595bcc65c485aed61dd47c86c6c3839cd"
+    },
+    {
+      "path": "vendor/wasm/vision_wasm_nosimd_internal.js",
+      "source": "https://www.npmjs.com/package/@mediapipe/tasks-vision",
+      "version": "0.10.18",
+      "bytes": 203672,
+      "sha256": "d206ba4e27c42a5863b4001c6d9366345f4507979cd6efd087a149ef7781ccd3"
+    },
+    {
+      "path": "vendor/wasm/vision_wasm_nosimd_internal.wasm",
+      "source": "https://www.npmjs.com/package/@mediapipe/tasks-vision",
+      "version": "0.10.18",
+      "bytes": 9376240,
+      "sha256": "17c2bff095305fcae98faa0817cbf72f13df9baf76f2067992a8624ef54d18cb"
+    }
+  ]
+}

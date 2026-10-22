@@ -1,0 +1,27 @@
+{
+  "name": "skrien",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "description": "A camera-controlled adventure runner for Fire TV.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "setup": "node scripts/vendor.mjs && node scripts/build.mjs",
+    "build": "node scripts/build.mjs",
+    "dev": "node server.mjs --port 4173 --host 0.0.0.0",
+    "start": "node server.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "tunnel": "node scripts/tunnel.mjs"
+  },
+  "dependencies": {
+    "@mediapipe/tasks-vision": "0.10.18",
+    "three": "0.160.1",
+    "ws": "8.18.3"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.12"
+  }
+}

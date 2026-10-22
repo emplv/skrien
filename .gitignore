@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+vega/generated/
+.dist-stage-*/
+.dist-previous-*/

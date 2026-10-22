@@ -1,0 +1,24 @@
+# skrien.service — systemd unit for SKRIEN (skrien.emplv.com).
+# deploy/install.sh installs and restarts it.
+[Unit]
+Description=SKRIEN web game and camera controller relay
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=skrien
+WorkingDirectory=/srv/skrien/app
+Environment=NODE_ENV=production
+# Bound to loopback; Caddy is the only public entry point.
+ExecStart=/usr/bin/node /srv/skrien/app/server.mjs --host 127.0.0.1 --port 4373
+Restart=on-failure
+RestartSec=3
+# The relay keeps rooms in memory and never writes to disk.
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+
+[Install]
+WantedBy=multi-user.target

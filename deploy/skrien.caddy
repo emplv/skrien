@@ -1,0 +1,16 @@
+# skrien.caddy — Caddy site-block snippet for SKRIEN (skrien.emplv.com).
+# deploy/install.sh copies it to /etc/caddy/conf.d/ and validates the whole
+# config before reloading, so a bad snippet never takes other sites offline.
+#
+# TLS: Cloudflare proxies *.emplv.com and terminates browser TLS. Caddy answers
+# the edge with the shared Cloudflare Origin CA certificate. Zone SSL mode: Full (strict).
+
+skrien.emplv.com {
+	tls /etc/caddy/origin.pem /etc/caddy/origin.key
+
+	encode zstd gzip
+
+	# One Node process serves the web game and the /relay WebSocket.
+	# reverse_proxy passes WebSocket upgrades through unchanged.
+	reverse_proxy 127.0.0.1:4373
+}
